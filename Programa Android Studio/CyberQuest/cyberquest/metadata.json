@@ -1,0 +1,6 @@
+{
+  "name": "CyberQuest",
+  "description": "Plataforma interactiva de ciberseguridad con evaluador de contraseñas y tests de conocimiento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

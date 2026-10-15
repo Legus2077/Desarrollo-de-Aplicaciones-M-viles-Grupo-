@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cq_void">
+
+    <!-- Container for all screens -->
+    <FrameLayout
+        android:id="@+id/screensContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/screenSplash"
+            layout="@layout/layout_screen_splash"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/screenAuth"
+            layout="@layout/layout_screen_auth"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/screenHome"
+            layout="@layout/layout_screen_home"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/screenPwdEvaluator"
+            layout="@layout/layout_screen_pwd_evaluator"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/screenTestIntro"
+            layout="@layout/layout_screen_test_intro"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/screenQuestion"
+            layout="@layout/layout_screen_question"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/screenResults"
+            layout="@layout/layout_screen_results"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- Bottom Navigation Bar (visible on Home) -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_nav"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- Tab: Inicio -->
+        <LinearLayout
+            android:id="@+id/tabNavHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivNavHome"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="Inicio"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:id="@+id/tvNavHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Inicio"
+                android:textColor="@color/cq_cyan"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Tab: Resultados -->
+        <LinearLayout
+            android:id="@+id/tabNavResults"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivNavResults"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="Resultados"
+                android:src="@drawable/ic_chart" />
+
+            <TextView
+                android:id="@+id/tvNavResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Resultados"
+                android:textColor="@color/cq_text_faint"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Tab: Cerrar sesión -->
+        <LinearLayout
+            android:id="@+id/tabNavLogout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivNavLogout"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="Cerrar sesión"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:id="@+id/tvNavLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Cerrar sesión"
+                android:textColor="@color/cq_text_faint"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Welcome Toast Banner -->
+    <LinearLayout
+        android:id="@+id/welcomeToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_toast"
+        android:elevation="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/toastDot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_check_circle_ok" />
+
+        <TextView
+            android:id="@+id/tvToastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="¡Bienvenido de nuevo, Ana!"
+            android:textColor="@color/cq_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
