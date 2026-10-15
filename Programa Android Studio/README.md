@@ -14,3 +14,10 @@ Historia de Usuario 1
 Historia de Usuario 2
 Historia de Usuario 3
 Historia de Usuario 4
+
+Versíon 2 de la App:
+
+Incluye Sprint 2: 
+Historia de Usuario 5
+Historia de Usuario 6
+Historia de Usuario 7
