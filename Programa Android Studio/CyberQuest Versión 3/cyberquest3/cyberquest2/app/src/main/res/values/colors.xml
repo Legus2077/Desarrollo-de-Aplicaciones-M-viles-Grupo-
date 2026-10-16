@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cq_void">#0E0619</color>
+    <color name="cq_deep">#17092C</color>
+    <color name="cq_surface">#1F0E3B</color>
+    <color name="cq_surface_hi">#2A1450</color>
+    <color name="cq_purple">#6C2BD9</color>
+    <color name="cq_purple_bright">#9B4DFF</color>
+    <color name="cq_purple_soft">#4B2680</color>
+    <color name="cq_cyan">#00E0C6</color>
+    <color name="cq_cyan_dim">#1AE0C6</color>
+    <color name="cq_cyan_subtle">#1F333E</color>
+    <color name="cq_text">#F3EEFB</color>
+    <color name="cq_text_dim">#AE9DCB</color>
+    <color name="cq_text_faint">#7C6A9C</color>
+    <color name="cq_danger">#FF5C7A</color>
+    <color name="cq_warn">#FFB84D</color>
+    <color name="cq_success">#34E08A</color>
+    <color name="cq_border">#2E1C4D</color>
+    <color name="cq_border_light">#3D2468</color>
+    <color name="cq_card_active">#251245</color>
+    <color name="cq_modal_bg">#CC05020A</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Cyberquest2" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/cq_purple_bright</item>
+        <item name="colorPrimaryContainer">@color/cq_purple_soft</item>
+        <item name="colorSecondary">@color/cq_cyan</item>
+        <item name="colorSecondaryContainer">@color/cq_surface_hi</item>
+        <item name="android:windowBackground">@color/cq_void</item>
+        <item name="android:statusBarColor">@color/cq_void</item>
+        <item name="android:navigationBarColor">@color/cq_deep</item>
+        <item name="android:textColorPrimary">@color/cq_text</item>
+        <item name="android:textColorSecondary">@color/cq_text_dim</item>
+    </style>
+
+    <style name="Theme.Cyberquest2" parent="Base.Theme.Cyberquest2" />
+</resources>
