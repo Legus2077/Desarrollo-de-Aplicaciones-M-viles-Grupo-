@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175440825378",
+    "project_id": "cyberquest-upn",
+    "storage_bucket": "cyberquest-upn.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175440825378:android:a6e123511de7bb48a64e7b",
+        "android_client_info": {
+          "package_name": "com.aistudio.cyberquest.xkvp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl2keQkbAWUFXDrR4TbbXFvwDGuF15qYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

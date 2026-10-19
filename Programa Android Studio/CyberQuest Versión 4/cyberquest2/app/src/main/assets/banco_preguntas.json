@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "generado": "2026-10-15",
+  "niveles": [
+    {
+      "id": "basico",
+      "nombre": "Test Básico",
+      "orden": 1,
+      "umbral": 80,
+      "descripcion": "Fundamentos de ciberseguridad",
+      "duracionMin": 5
+    },
+    {
+      "id": "intermedio",
+      "nombre": "Test Intermedio",
+      "orden": 2,
+      "umbral": 85,
+      "descripcion": "Buenas prácticas y casos frecuentes",
+      "duracionMin": 5
+    },
+    {
+      "id": "avanzado",
+      "nombre": "Test Avanzado",
+      "orden": 3,
+      "umbral": 90,
+      "descripcion": "Escenarios complejos y amenazas actuales",
+      "duracionMin": 5
+    },
+    {
+      "id": "experto",
+      "nombre": "Test Experto",
+      "orden": 4,
+      "umbral": 90,
+      "descripcion": "Nivel máximo: casos avanzados de phishing",
+      "duracionMin": 5
+    }
+  ],
+  "modulos": [
+    {
+      "id": 1,
+      "nombre": "Seguridad y Protección de Dispositivos",
+      "nombreCorto": "Seguridad de Dispositivos",
+      "cuota": 2
+    },
+    {
+      "id": 2,
+      "nombre": "Gestión de Contraseñas y Seguridad de la Información",
+      "nombreCorto": "Gestión de Contraseñas",
+      "cuota": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Comportamiento en Línea y Uso de Redes Sociales",
+      "nombreCorto": "Comportamiento en Línea",
+      "cuota": 3
+    },
+    {
+      "id": 4,
+      "nombre": "Simulador de Phishing",
+      "nombreCorto": "Simulador de Phishing",
+      "cuota": 3
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "B1-01",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Recibes un aviso en tu pantalla que dice: \"¡Alerta! Tu laptop está infectada con 5 virus. Haz clic aquí para descargarte CleanerFree y solucionarlo\". ¿Qué haces?",
+      "opciones": [
+        "Hago clic para descargar la herramienta y limpiar el equipo.",
+        "Cierro la ventana o navegador y ejecuto el antivirus oficial que tengo instalado.",
+        "Reinicio la laptop para que el virus se borre solo."
+      ],
+      "correcta": 1,
+      "explicacion": "Las ventanas emergentes que anuncian virus suelen ser scareware (publicidad engañosa) para que descargues software malicioso."
+    },
+    {
+      "id": "B1-02",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Vas a descargar una aplicación para editar PDF. ¿Cuál es la opción más segura?",
+      "opciones": [
+        "Buscar en Google \"PDF editor gratis crack\" y bajar el primer ejecutable .exe.",
+        "Descargarla desde la tienda oficial (Microsoft Store / App Store) o la web oficial del desarrollador.",
+        "Pedirle a un amigo que me pase el instalador por WhatsApp."
+      ],
+      "correcta": 1,
+      "explicacion": "Las descargas fuera de fuentes oficiales o repositorios con \"cracks\" contienen troyanos en un alto porcentaje de casos."
+    },
+    {
+      "id": "B1-03",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Te conectas al Wi-Fi gratuito de una cafetería para avanzar un trabajo académico. ¿Qué actividad deberías evitar?",
+      "opciones": [
+        "Leer artículos de noticias o blogs.",
+        "Iniciar sesión en la banca por internet o ingresar tarjetas de crédito.",
+        "Buscar información en Wikipedia."
+      ],
+      "correcta": 1,
+      "explicacion": "Las redes Wi-Fi públicas son inseguras y el tráfico puede ser interceptado mediante ataques Man-in-the-Middle."
+    },
+    {
+      "id": "B1-04",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Tu sistema operativo te muestra una notificación: \"Actualización de seguridad disponible\". ¿Qué debes hacer?",
+      "opciones": [
+        "Posponerla indefinidamente porque consume espacio y lentifica la PC.",
+        "Instalar la actualización tan pronto como sea posible.",
+        "Desactivar las actualizaciones automáticas para siempre."
+      ],
+      "correcta": 1,
+      "explicacion": "Las actualizaciones corrigen vulnerabilidades críticas que los atacantes aprovechan para infectar dispositivos."
+    },
+    {
+      "id": "B1-05",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Encuentras un USB tirado en el pasillo de la universidad. ¿Cuál es la conducta adecuada?",
+      "opciones": [
+        "Conectarlo a mi laptop para ver de quién es y devolverlo.",
+        "Entregarlo en recepción/seguridad sin conectarlo a ningún dispositivo.",
+        "Formatearlo en mi laptop para quedarme con la memoria."
+      ],
+      "correcta": 1,
+      "explicacion": "Conectar memorias desconocidas expone tu equipo a código malicioso automático (Rubber Ducky o malware autorun)."
+    },
+    {
+      "id": "B1-06",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Te levantas de tu mesa en la biblioteca para ir al baño por 3 minutos. ¿Qué debes hacer con tu laptop?",
+      "opciones": [
+        "Dejarla abierta, vuelvo rápido.",
+        "Bloquear la pantalla con la combinación de teclas (Win + L / Cmd + Ctr + Q) o llevarla conmigo.",
+        "Bajar la tapa sin bloquear la sesión."
+      ],
+      "correcta": 1,
+      "explicacion": "La seguridad física es el primer perímetro. Un acceso desatendido de segundos basta para extraer información."
+    },
+    {
+      "id": "B1-07",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Un compañero te pide prestarle tu memoria USB para copiar una exposición. ¿Qué precaución debes tomar antes de abrir los archivos en tu PC?",
+      "opciones": [
+        "Ninguna, es mi amigo.",
+        "Escanear la memoria USB con el antivirus antes de abrir sus carpetas.",
+        "Abrir los archivos directamente en vista previa."
+      ],
+      "correcta": 1,
+      "explicacion": "La infección de memorias externas es una de las formas más comunes de propagación de malware en entornos universitarios."
+    },
+    {
+      "id": "B1-08",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "¿Cuál de los siguientes indicadores en la barra de direcciones te confirma que la conexión con una web es cifrada?",
+      "opciones": [
+        "Que la dirección empiece con http://.",
+        "Que tenga el prefijo https:// y el icono de un candado cerrado.",
+        "Que la página tenga un diseño moderno y profesional."
+      ],
+      "correcta": 1,
+      "explicacion": "El protocolo HTTPS cifrará los datos transmitidos entre tu navegador y el servidor."
+    },
+    {
+      "id": "B1-09",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "Recibes una notificación en tu teléfono que indica que una app de linterna solicita acceso a tus Contactos y Ubicación. ¿Qué haces?",
+      "opciones": [
+        "Acepto los permisos, de lo contrario la app no funcionará.",
+        "Rechazo los permisos o desinstalo la app, ya que no requiere esos accesos para funcionar.",
+        "Acepto solo el permiso de ubicación."
+      ],
+      "correcta": 1,
+      "explicacion": "El principio de mínimo privilegio dicta que una aplicación solo debe tener los accesos estrictamente necesarios para su función."
+    },
+    {
+      "id": "B1-10",
+      "nivel": "basico",
+      "modulo": 1,
+      "escenario": null,
+      "pregunta": "¿Por qué es importante activar un firewall (cortafuegos) en tu sistema operativo?",
+      "opciones": [
+        "Para acelerar la velocidad de internet.",
+        "Para bloquear el tráfico de red no autorizado entrante y saliente de tu equipo.",
+        "Para eliminar virus guardados en el disco duro."
+      ],
+      "correcta": 1,
+      "explicacion": "El firewall actúa como un filtro que inspecciona las conexiones de red para evitar accesos no autorizados."
+    },
+    {
+      "id": "B2-01",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "¿Cuál de las siguientes contraseñas es la más segura contra ataques automatizados?",
+      "opciones": [
+        "Carlos2024*",
+        "1234-567890!",
+        "Sol-Gato-Cafe-92#"
+      ],
+      "correcta": 2,
+      "explicacion": "Las frases de contraseña (passphrases) largas con palabras aleatorias, números y símbolos ofrecen mayor longitud y entropía."
+    },
+    {
+      "id": "B2-02",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "Un amigo te pide la contraseña de la plataforma académica para descargar una tarea porque olvidó la suya. ¿Qué haces?",
+      "opciones": [
+        "Se la envío por WhatsApp y le pido que la borre después.",
+        "Le indico cómo usar la opción \"Olvidé mi contraseña\" en la plataforma sin darle la mía.",
+        "Le creo una cuenta nueva con mis datos."
+      ],
+      "correcta": 1,
+      "explicacion": "Las credenciales son personales e transferibles. Compartirlas rompe la trazabilidad y la seguridad de tu identidad digital."
+    },
+    {
+      "id": "B2-03",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "Usar la misma contraseña para tu correo personal, redes sociales y campus virtual provoca que:",
+      "opciones": [
+        "Tu cuenta sea más fácil de recuperar.",
+        "Si una plataforma sufre una filtración de datos, todas tus demás cuentas queden expuestas (Credential Stuffing).",
+        "Los servidores funcionen más rápido."
+      ],
+      "correcta": 1,
+      "explicacion": "La reutilización de claves genera un efecto dominó: una sola filtración compromete toda tu presencia digital."
+    },
+    {
+      "id": "B2-04",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "¿Qué función cumple la Autenticación de Doble Factor (2FA / MFA)?",
+      "opciones": [
+        "Cambiar la contraseña automáticamente cada mes.",
+        "Requerir un segundo paso de verificación (código SMS, app autenticadora) además de la contraseña.",
+        "Guardar tus claves en la nube de forma cifrada."
+      ],
+      "correcta": 1,
+      "explicacion": "El 2FA añade una capa de protección adicional: aunque un atacante descubra tu clave, no podrá ingresar sin el segundo factor."
+    },
+    {
+      "id": "B2-05",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "¿Cuál es el método más seguro para generar y almacenar decenas de contraseñas complejas?",
+      "opciones": [
+        "Anotarlas en una libreta física o en un bloc de notas en el escritorio.",
+        "Utilizar un Administrador de Contraseñas (ej. Bitwarden, KeePass, 1Password).",
+        "Guardarlas en un chat privado de WhatsApp."
+      ],
+      "correcta": 1,
+      "explicacion": "Los gestores cifran la bóveda de claves mediante una contraseña maestra sólida, evitando que las olvides o las expongas."
+    },
+    {
+      "id": "B2-06",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "Quieres subir un archivo con información personal sensible a Google Drive para compartirlo con un grupo. ¿Cómo debes proceder?",
+      "opciones": [
+        "Cambiar el acceso a \"Cualquier persona con el enlace puede ver\".",
+        "Compartir el acceso únicamente a los correos específicos de los integrantes.",
+        "Publicar el enlace en un grupo público de WhatsApp."
+      ],
+      "correcta": 1,
+      "explicacion": "La gestión de accesos específicos garantiza que solo las personas autorizadas puedan consultar la información."
+    },
+    {
+      "id": "B2-07",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "Un correo oficial del área de TI de tu universidad solicita que envíes tu clave actual para \"mantenimiento del servidor\". ¿Qué debes hacer?",
+      "opciones": [
+        "Responder el correo adjuntando la clave.",
+        "Ignorar el correo y reportarlo, ninguna entidad legítima solicita contraseñas por correo.",
+        "Cambiar la clave a una temporal y enviarla."
+      ],
+      "correcta": 1,
+      "explicacion": "Los administradores de sistemas nunca necesitan conocer tu contraseña en texto plano para realizar mantenimientos."
+    },
+    {
+      "id": "B2-08",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "En el evaluador de contraseñas escribes P@ssword1. El sistema te indica que es \"Débil\". ¿Por qué?",
+      "opciones": [
+        "Porque no tiene suficientes números.",
+        "Porque usa sustituciones comunes (@ por a) de una palabra diccionaria altamente predecible.",
+        "Porque tiene menos de 20 caracteres por lo que la idéntica como corta."
+      ],
+      "correcta": 1,
+      "explicacion": "Los diccionarios de hacking reconocen de inmediato las sustituciones típicas como @ por a o 1 por i."
+    },
+    {
+      "id": "B2-09",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "¿Cada cuánto tiempo es recomendable revisar y revocar las sesiones activas o aplicaciones vinculadas a tu cuenta de Google/Microsoft?",
+      "opciones": [
+        "Nunca, se cierran solas.",
+        "Periódicamente (ej. cada pocos meses) o inmediatamente ante un comportamiento sospechoso.",
+        "Únicamente cuando compras un teléfono nuevo."
+      ],
+      "correcta": 1,
+      "explicacion": "Revisar los dispositivos conectados permite detectar accesos no autorizados que permanecen abiertos en segundo plano."
+    },
+    {
+      "id": "B2-10",
+      "nivel": "basico",
+      "modulo": 2,
+      "escenario": null,
+      "pregunta": "¿Qué debes hacer antes de deshacerte de una laptop o teléfono antiguo?",
+      "opciones": [
+        "Borrar las fotos y la papelera de reciclaje.",
+        "Cifrar el disco y realizar un restablecimiento de fábrica (borrado seguro).",
+        "Desinstalar las redes sociales únicamente."
+      ],
+      "correcta": 1,
+      "explicacion": "La eliminación simple de archivos no destruye la información; con herramientas de recuperación se puede extraer fácilmente."
+    },
+    {
+      "id": "B3-01",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Recibes un correo de tu \"banco\" diciendo que tu cuenta será bloqueada en 2 horas si no verificas tus datos en un enlace. ¿Qué haces?",
+      "opciones": [
+        "Hacer clic de inmediato para evitar el bloqueo.",
+        "No hacer clic en el enlace y consultar directamente por los canales oficiales del banco (app o banca por teléfono).",
+        "Responder al correo preguntando si es real."
+      ],
+      "correcta": 1,
+      "explicacion": "El sentido de urgencia e intimidación es la marca registrada de los ataques de phishing."
+    },
+    {
+      "id": "B3-02",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Ves un enlace acortado (bit.ly/3xY7z) enviado por un compañero en un grupo de estudios. ¿Cuál es el riesgo?",
+      "opciones": [
+        "Ninguno, los enlaces acortados siempre son seguros.",
+        "Oculta el destino real de la web, pudiendo redirigirte a un sitio malicioso o de suplantación.",
+        "Consume más datos móviles de lo normal."
+      ],
+      "correcta": 1,
+      "explicacion": "Los acortadores de URL son usados para enmascarar enlaces maliciosos y evadir los filtros de seguridad básicos."
+    },
+    {
+      "id": "B3-03",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Un contacto en Instagram te escribe: \"¡Hola! Te agregué a un concurso y ganaste $500, solo ingresa a este enlace para reclamarlo\". ¿Cómo reaccionas?",
+      "opciones": [
+        "Abrir el enlace para ver si es verdad.",
+        "Sospechar de un compromiso de cuenta (cuenta hackeada de tu amigo) e ignorar/verificar por otro medio.",
+        "Darle mis datos bancarios para que haga el depósito."
+      ],
+      "correcta": 1,
+      "explicacion": "Los atacantes usan cuentas robadas de amigos para generar confianza engañosa en las víctimas."
+    },
+    {
+      "id": "B3-04",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Publicas una foto de tu nueva credencial universitaria o DNI en historias para celebrar tu ingreso. ¿Qué problema genera?",
+      "opciones": [
+        "Ninguno, es información pública.",
+        "Expone datos personales (números de documento, nombres, firmas) utilizables para suplantación de identidad.",
+        "Solo que tus contactos sabrán tu edad."
+      ],
+      "correcta": 1,
+      "explicacion": "La publicación de documentos oficiales facilita la recolección de datos (OSINT) para cometer fraudes a tu nombre."
+    },
+    {
+      "id": "B3-05",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Al instalar un juego gratuito en el celular, la app solicita acceso a tu cámara, micrófono y SMS. ¿Qué debes considerar?",
+      "opciones": [
+        "Es normal para todos los juegos modernos.",
+        "Es un riesgo de privacidad; si la función del juego no lo exige, no se deben conceder esos permisos.",
+        "Concederlos solo mientras juego."
+      ],
+      "correcta": 1,
+      "explicacion": "Muchas aplicaciones maliciosas usan permisos desproporcionados para realizar espionaje o enviar SMS de pago."
+    },
+    {
+      "id": "B3-06",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "¿Qué es la \"Ingeniería Social\" en el ámbito de la ciberseguridad?",
+      "opciones": [
+        "Un método de programación para redes sociales.",
+        "Tácticas de manipulación psicológica para engañar a las personas y hacer que entreguen información confidencial.",
+        "La configuración de privacidad de un perfil."
+      ],
+      "correcta": 1,
+      "explicacion": "La ingeniería social explota la confianza, la curiosidad o el miedo humano en lugar de fallas técnicas en los sistemas."
+    },
+    {
+      "id": "B3-07",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Estás navegando y aparece un mensaje en una web: \"Tu navegador Chrome está desactualizado. Haz clic aquí para actualizar\". ¿Qué haces?",
+      "opciones": [
+        "Descargar el instalador que ofrece la página.",
+        "Ignorar la web y verificar las actualizaciones directamente en la configuración interna de Chrome (Chrome://settings).",
+        "Cerrar el navegador y no volver a usarlo."
+      ],
+      "correcta": 1,
+      "explicacion": "Las falsas actualizaciones de navegador son un vector común de distribución de malware y adware."
+    },
+    {
+      "id": "B3-08",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "¿Qué significa configurar tu perfil de red social como \"Privado\"?",
+      "opciones": [
+        "Que nadie en internet podrá ver tus fotos, ni siquiera tus amigos.",
+        "Que solo los usuarios que tú apruebes expresamente podrán ver las publicaciones e información de tu perfil.",
+        "Que la empresa dueña de la red social borra tus datos."
+      ],
+      "correcta": 1,
+      "explicacion": "La privacidad restringida reduce el alcance de tus datos personales ante terceros desconocidos o raspadores de datos."
+    },
+    {
+      "id": "B3-09",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Te llega un SMS diciendo: \"Su paquete de compras no pudo ser entregado por falta de dirección. Ingrese a envios-correo.top\". Si no has comprado nada, ¿qué debes hacer?",
+      "opciones": [
+        "Ingresar por curiosidad para ver qué paquete es.",
+        "Eliminar el mensaje; se trata de una campaña masiva de Smishing (Phishing por SMS).",
+        "Responder al mensaje pidiendo que lo devuelvan al remitente."
+      ],
+      "correcta": 1,
+      "explicacion": "El smishing busca capturar datos bancarios o credenciales mediante mensajes masivos de texto."
+    },
+    {
+      "id": "B3-10",
+      "nivel": "basico",
+      "modulo": 3,
+      "escenario": null,
+      "pregunta": "Vas a vender un artículo por Facebook Marketplace. El comprador te envía un comprobante de pago falso y te pide que le transfieras el \"vuelto\" por un supuesto exceso. ¿Cómo evitas el fraude?",
+      "opciones": [
+        "Confiar en la captura de pantalla que envió el comprador.",
+        "Verificar de forma independiente en tu propia aplicación bancaria si el dinero realmente ha ingresado.",
+        "Enviarle la mitad del dinero mientras confirmas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las capturas de transferencias son fácilmente editables; la única verificación válida es el saldo real reflejado en tu cuenta."
+    },
+    {
+      "id": "B4-01",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 1: Alerta de Cuenta del Campus Virtual\n\nRecibes un correo con el asunto \"URGENTE: Su cuenta de la Universidad será suspendida en 24 horas por falta de actualización de datos\". El remitente es soporte-unprg@gmail-services.com.",
+      "pregunta": "¿Cómo procedes ante este correo?",
+      "opciones": [
+        "Hago clic en el enlace adjunto e ingreso mis credenciales para evitar que bloqueen mi cuenta.",
+        "Reporto el correo como sospechoso; la universidad usa dominio institucional (@unprg.edu.pe) y no amenaza con cierres inmediatos por Gmail.",
+        "Respondo al correo enviando mi usuario y clave actual para que lo solucionen internamente."
+      ],
+      "correcta": 1,
+      "explicacion": "Las universidades nunca envían alertas de suspensión desde dominios gratuitos (@gmail-services.com). La urgencia de 24 horas es una técnica de manipulación."
+    },
+    {
+      "id": "B4-02",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 2: Oferta de Empleo Remoto Estudiantil (Smishing)\n\nTe llega un mensaje de WhatsApp desde un número internacional (+234): \"¡Hola! Trabajo en Amazon y buscamos estudiantes para trabajar 1 hora al día ganando $200 diarios. Ingresa a bit.ly/trabajo-facil-2026\".",
+      "pregunta": "¿Cuál es la acción correcta?",
+      "opciones": [
+        "Ingreso al enlace para ver los requisitos del empleo.",
+        "Bloqueo el número y elimino el mensaje sin hacer clic en el enlace.",
+        "Respondo pidiendo más detalles sobre la empresa."
+      ],
+      "correcta": 1,
+      "explicacion": "Las ofertas de empleo no solicitadas con sueldos irreales vía WhatsApp o SMS son estafas de reclutamiento diseñadas para capturar datos bancarios o vender suscripciones de pago."
+    },
+    {
+      "id": "B4-03",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 3: Recuperación de Cuenta de Redes Sociales\n\nRecibes un correo que simula ser de Instagram: \"Detectamos un inicio de sesión no autorizado en tu cuenta. Haz clic aquí para verificar tu identidad\". La dirección del enlace te lleva a www.instagram-security-check.net.",
+      "pregunta": "¿Qué detalle revela que es un ataque de phishing?",
+      "opciones": [
+        "El asunto del correo está escrito en español.",
+        "El dominio de la URL (instagram-security-check.net) no pertenece al dominio oficial de Instagram (instagram.com).",
+        "Que te soliciten verificar tu identidad."
+      ],
+      "correcta": 1,
+      "explicacion": "Los atacantes registran dominios parecidos que incluyen el nombre de la marca (ej. instagram-security-check.net) para engañar a la vista, pero la web oficial es únicamente instagram.com."
+    },
+    {
+      "id": "B4-04",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 4: Sorteo de Pasajes/Tecnología en Redes Sociales\n\nUn amigo te etiqueta en Facebook en una publicación que dice: \"¡LATAM / Apple está regalando 500 MacBooks por su aniversario! Haz clic aquí, llena la encuesta y compártelo con 10 amigos para reclamar la tuya\".",
+      "pregunta": "¿Qué debes hacer?",
+      "opciones": [
+        "Llenar la encuesta y compartirla rápido antes de que se agoten los cupos.",
+        "Advertir a tu amigo que su cuenta o la publicación es un fraude de phishing y no ingresar al enlace.",
+        "Compartir la publicación pero no llenar la encuesta con mis datos reales."
+      ],
+      "correcta": 1,
+      "explicacion": "Los falsos sorteos virales buscan recolectar datos personales masivos (phishing de datos) o instalar códigos maliciosos mediante dinámicas de compartir obligatoriamente."
+    },
+    {
+      "id": "B4-05",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 5: Notificación Falsa de Envío de Paquete\n\nRecibes un correo de \"SERPOST\" o \"Olva Courier\" indicando: \"Su paquete no pudo ser entregado por falta de pago de un recargo de S/ 4.50. Ingrese sus datos de tarjeta de crédito en pago-envios-serpost.site para reprogramar\".",
+      "pregunta": "¿Cómo debes actuar?",
+      "opciones": [
+        "Ingresar los datos de la tarjeta ya que el monto cobrado es muy bajo.",
+        "Ignorar el correo; es un fraude de captura de credenciales financieras (Carding/Phishing).",
+        "Llamar al número que aparece en la parte inferior del correo sospechoso."
+      ],
+      "correcta": 1,
+      "explicacion": "Aunque la suma solicitada sea mínima (ej. S/ 4.50), el objetivo real del sitio falso es clonar los números completos de tu tarjeta de crédito o débito."
+    },
+    {
+      "id": "B4-06",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 6: Factura o Comprobante de Pago Adjunto (.zip / .exe)\n\nRecibes un correo de un remitente desconocido: \"Estimado cliente, adjunto enviamos la factura electrónica correspondiente a su última compra. Descargue el archivo Factura_Enero_2026.pdf.exe\".",
+      "pregunta": "¿Qué peligro representa este archivo adjunto?",
+      "opciones": [
+        "Ninguno, los archivos PDF son completamente seguros.",
+        "Es un programa ejecutable malicioso (.exe) disfrazado con doble extensión para infectar el equipo al abrirlo.",
+        "Solamente consumirá espacio en el disco duro."
+      ],
+      "correcta": 1,
+      "explicacion": "La técnica de la doble extensión (como .pdf.exe) intenta engañar a los usuarios para que ejecuten malware oculto creyendo que abren un documento de texto o factura."
+    },
+    {
+      "id": "B4-07",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 7: Intento de Suplantación por Correo Institucional Comprometido\n\nRecibes un correo enviado desde la cuenta de un profesor real de tu facultad (profesor@unprg.edu.pe): \"Jóvenes, ingresen a este enlace externo bit.ly/examen-cancelado para ver las notas corregidas del examen final\".",
+      "pregunta": "A pesar de venir de un correo universitario real, ¿por qué deberías desconfiar?",
+      "opciones": [
+        "Porque los profesores nunca envían notas por correo electrónico.",
+        "La cuenta del profesor pudo ser comprometida (hackeada) y usarse para enviar enlaces maliciosos masivos a los alumnos.",
+        "Porque el correo se envió fuera del horario de clases."
+      ],
+      "correcta": 1,
+      "explicacion": "Si la cuenta de un docente es vulnerada, los atacantes la utilizan para distribuir phishing interno aprovechando la confianza implícita que los estudiantes tienen en la institución."
+    },
+    {
+      "id": "B4-08",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 8: Alerta Falsa de Seguridad en Banca Móvil\n\nTe llega un SMS: \"BCP / Interbank: Se ha registrado una transferencia sospechosa de S/ 850 desde tu cuenta. Si no la reconoces, cancela la operación de inmediato ingresando a bancamovil-seguridad.com\".",
+      "pregunta": "¿Cuál es la forma más segura de reaccionar?",
+      "opciones": [
+        "Hacer clic en el enlace para cancelar la transferencia de inmediato antes de que pierda el dinero.",
+        "Abrir directamente la app oficial del banco en el celular (o llamar al número del reverso de la tarjeta) para revisar el saldo real.",
+        "Responder el mensaje con la palabra \"CANCELAR\"."
+      ],
+      "correcta": 1,
+      "explicacion": "Los mensajes de texto que simulan alarmas bancarias buscan que el usuario ingrese en pánico a una web clonada para robarle la clave de acceso y el token digital."
+    },
+    {
+      "id": "B4-09",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 9: QRing / Quishing (Phishing mediante Código QR)\n\nEn la cafetería universitaria o en un afiche pegado en el campus ves un código QR que dice: \"Escanea aquí para obtener un cupón de 50% de descuento en el menú estudiantil\". Al escanearlo, el teléfono te dirige a un formulario no oficial que solicita tu usuario y contraseña institucional.",
+      "pregunta": "¿Qué tipo de ataque es este y cómo debes proceder?",
+      "opciones": [
+        "Es un ataque de Quishing (Phishing vía QR); no debo ingresar credenciales en formularios abiertos desde un QR en un espacio público.",
+        "Es seguro, porque los códigos QR no pueden contener enlaces maliciosos.",
+        "Debo ingresar una contraseña falsa para probar si el sistema funciona."
+      ],
+      "correcta": 0,
+      "explicacion": "El Quishing reemplaza o crea códigos QR físicos para llevar a las víctimas a páginas web falsas donde solicitan credenciales o datos de pago."
+    },
+    {
+      "id": "B4-10",
+      "nivel": "basico",
+      "modulo": 4,
+      "escenario": "Caso 10: Notificación de \"Soporte Técnico\" en Redes Sociales\n\nPublicas un tweet quejándote de un problema en una plataforma digital. Minutos después, una cuenta llamada @Soporte_Ayuda_Oficial (sin la tilde azul de verificación) te responde por mensaje privado: \"Lamentamos las molestias. Para solucionar tu problema, indícanos el correo y la contraseña asociada a tu cuenta\".",
+      "pregunta": "¿Qué debes responder?",
+      "opciones": [
+        "Enviar los datos por privado ya que es la cuenta oficial de soporte técnico.",
+        "No enviar ninguna contraseña; las cuentas de soporte oficial jamás piden claves de acceso por mensaje privado.",
+        "Enviar únicamente la contraseña y no el correo."
+      ],
+      "correcta": 1,
+      "explicacion": "Bots de ingeniería social rastrean palabras clave como \"error\", \"ayuda\" o \"falla\" en redes para suplantar al soporte oficial y robar credenciales a usuarios frustrados."
+    }
+  ]
+}
