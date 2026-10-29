@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenPwdEvaluator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cq_void"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- Top Nav -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="12dp">
+
+            <FrameLayout
+                android:id="@+id/btnBackFromPwd"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_card_surface"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Atrás"
+                    android:src="@drawable/ic_arrow_back" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Evaluador de Contraseñas"
+                android:textColor="@color/cq_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Input wrap -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Escribe una contraseña de prueba"
+                android:textColor="@color/cq_text_dim"
+                android:textSize="12.5sp" />
+
+            <EditText
+                android:id="@+id/etPwdTest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Ej. MiClave123!"
+                android:inputType="text"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/cq_text"
+                android:textColorHint="@color/cq_text_faint"
+                android:textSize="15sp" />
+
+            <!-- Meter -->
+            <ProgressBar
+                android:id="@+id/pbPwdMeter"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="16dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_custom_horizontal" />
+
+            <!-- Label & Percentage -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvStrengthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Esperando entrada…"
+                    android:textColor="@color/cq_text_faint"
+                    android:textSize="13.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStrengthPct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="0%"
+                    android:textColor="@color/cq_text_faint"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Checks -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="24dp">
+
+            <!-- Check 1: Length -->
+            <LinearLayout
+                android:id="@+id/rowChkLen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/iconChkLen"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:gravity="center"
+                    android:text="•"
+                    android:textColor="@color/cq_text_faint"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textChkLen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Mínimo 8 caracteres"
+                    android:textColor="@color/cq_text_dim"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+
+            <!-- Check 2: Uppercase -->
+            <LinearLayout
+                android:id="@+id/rowChkUpper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/iconChkUpper"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:gravity="center"
+                    android:text="•"
+                    android:textColor="@color/cq_text_faint"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textChkUpper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Al menos una mayúscula"
+                    android:textColor="@color/cq_text_dim"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+
+            <!-- Check 3: Number -->
+            <LinearLayout
+                android:id="@+id/rowChkNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/iconChkNum"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:gravity="center"
+                    android:text="•"
+                    android:textColor="@color/cq_text_faint"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textChkNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Al menos un número"
+                    android:textColor="@color/cq_text_dim"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+
+            <!-- Check 4: Symbol -->
+            <LinearLayout
+                android:id="@+id/rowChkSym"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/iconChkSym"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:gravity="center"
+                    android:text="•"
+                    android:textColor="@color/cq_text_faint"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textChkSym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Al menos un símbolo especial"
+                    android:textColor="@color/cq_text_dim"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Security Tip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_tip_box"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="💡 Tip: combina palabras poco relacionadas entre sí en lugar de una sola palabra con números al final — es más fácil de recordar y más difícil de adivinar."
+                android:textColor="#BFF6EC"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
